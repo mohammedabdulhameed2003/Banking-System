@@ -9,7 +9,7 @@ public class DatabaseConnection {
             Class.forName("com.mysql.cj.jdbc.Driver");
             
             // Connect to MySQL database
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/BankingDB", "root", "sohail@sql"); // replace "password" with your MySQL password
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/BankingDB", "root", ""); // replace "password" with your MySQL password
         } catch (ClassNotFoundException | SQLException e) {
             throw new SQLException("Error connecting to database", e);
         }
